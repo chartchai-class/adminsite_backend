@@ -1,24 +1,25 @@
 version: '3.3'
+
 services:
-  adminsitebackend: 
-      container_name: adminsitebackendcontainer
-      image: 29ayenyeinsan/adminsite_backend
-      environment: 
-        DB_HOST: mysqldb
-        DB_PASSWORD: admin-password
-        DB_PORT: 3307
-        DB_CONNECTION_LIMIT: 3
-        SERVER_PORT: 5001
-      ports: 
-        - 5001:5001
-      expose:
-        - 5001
-      volumes:
-        - bookie_database_dbdata:/var/lib/mysql
-      networks:
-       - bookie_database_internalnet
-networks:
-  bookie_database_internalnet:
-volumes:
-  bookie_database_dbdata: 
+  adminsitebackend:
+    build:
+      context: .
+      dockerfile: Dockerfile
     
+    environment:
+      DB_HOST: ${RDS_HOSTNAME}
+      DB_PASSWORD: ${RDS_PASSWORD}
+      DB_PORT: ${RDS_PORT}
+      DB_NAME: bookstore
+      SERVER_PORT: 5001
+
+    ports:
+      - 5001:5001
+
+    expose:
+      - 5001
+
+
+
+
+

@@ -18,7 +18,7 @@ const Code = {
 
 
   Router.get('/category',async(req,res)=>{
-    const sqlQuery =  'SELECT * FROM category';
+    const sqlQuery =  'SELECT * FROM bookstore.category';
 
     const pool = dbModule.createPool();
     const connection = await pool.getConnection();
@@ -28,21 +28,18 @@ const Code = {
     console.log(result);
 
   })
-
-  Router.get('/add',  async(req, res) => {
-    let book = [req.body];
-    try {
-        const pool = dbModule.createPool();
-        const connection = await pool.getConnection();
-        const result = await connection.query(query.QUERY.CREATE_BOOK);
-        book = { id: result[0].insertId, ...req.body };
-        return res.status(Code.CREATED)
-          .send(new HttpResponse(Code.CREATED, Status.CREATED, 'Book created', book));
-      } catch (error) {
-        console.error(error);
-        return res.status(Code.INTERNAL_SERVER_ERROR)
-          .send(new HttpResponse(Code.INTERNAL_SERVER_ERROR, Status.INTERNAL_SERVER_ERROR, 'An error occurred'));
-      }
+  Router.get('/add',async(req,res)=>{
+    const sqlQuery =  `INSERT INTO bookstore.book(categoryId, coverImg, title, author, description, price, promotion_price, releaseDate, publisher, language, page, stock, sale_count)
+    VALUES (2, "https://1.bp.blogspot.com/-HRRu6dw6FTI/UiGGOYfeeII/AAAAAAAAAV4/aLFjY4lAAXkpQzVzVrmi0Nicu-kNwqeKwCPcB/s1600/german.jpg", "something", "me", "description", 23.7, 0, '2022-02-13', "publisher", "en", 34, 20, 0)`;
+    
+    const pool = dbModule.createPool();
+    const connection = await pool.getConnection();
+    const result = await connection.query(sqlQuery, (err) => {
+        if (err) throw err
+    })
+    console.log(result);
 
   })
+
+
 

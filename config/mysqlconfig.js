@@ -1,17 +1,19 @@
 
 const mysql = require('mysql2');
+const dotenv=require('dotenv').config();
+console.log(dotenv);
+
 
 
 const createPool = () => {
   try {
    
     const mysqlPool = mysql.createPool({
-      connectionLimit: 10,
-      host: '172.24.0.1',
-      user: 'root',
-      password: 'admin-password',
-      database: 'bookstore',
-      port: 3307,
+      host     : process.env.RDS_HOSTNAME,
+      user     : process.env.RDS_USERNAME,
+      password : process.env.RDS_PASSWORD,
+      database : 'bookstore',
+      port     : process.env.RDS_PORT
     });
     
 
