@@ -10,3 +10,7 @@ To destroy adminsite_backend container
 ```
 docker-compose down --rmi all -v --remove-orphans
 ```
+To see the running docker container
+```
+docker ps
+```
