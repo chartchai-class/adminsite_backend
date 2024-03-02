@@ -1,0 +1,47 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-regular {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.brandLogo {
+    width: 460px;
+    margin-top: 99px;
+}
+
+.login {
+    font-size: 64px;
+    margin-top: 90px;
+}
+
+.loginInput {
+    width: 395px;
+    height: 55px;
+    border-radius: 18px;
+    padding: 20px;
+    border: none;
+}
+
+input[type="text"] {
+    font-size: 35px;
+    color: #BAB9FD;
+    opacity: 77%;
+}
+
+button {
+    width: 200px;
+    height: 80px;
+    font-size: 35px;
+    background-color: #3D388B;
+    color: white;
+    border-radius: 18px;
+    padding: 20px;
+}
