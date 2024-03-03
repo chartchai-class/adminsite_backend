@@ -1,0 +1,84 @@
+<nav class="navbar navbar-expand-lg bg-body-light">
+  <div class="container">
+    <a class="navbar-brand" href="/">Bookie</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <form class="d-flex search" role="search">
+          <button class="btn" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+        <li class="nav-item">
+          <a class="nav-link" href="/categories">Categories</a>
+        </li>
+
+        <!--Categories-->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Select Category
+          </a>
+          <ul class="dropdown-menu">
+            <% categories.forEach(category => { %>
+            <li>
+              <a
+                class="dropdown-item"
+                href="/categories/<%= category.categoryId %>"
+                ><%= category.categoryName %></a
+              >
+            </li>
+            <% }) %>
+          </ul>
+        </li>
+
+        <!--Add-->
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Add
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/addCategory">Add Category</a>
+            </li>
+            <li><a class="dropdown-item" href="/addBook">Add Book</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

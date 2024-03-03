@@ -1,0 +1,31 @@
+<div class="row">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Category name</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% categories.forEach(category => { %>
+      <tr>
+        <td><%= category.categoryName %></td>
+        <td>
+          <a
+            href="/updateCate/<%= category.id %>"
+            type="button"
+            class="btn btn-light btn-small"
+            ><i class="bi bi-pen-fill"></i> Edit
+          </a>
+          <a
+            href="/category/<%= category.id %>"
+            type="button"
+            class="btn btn-light btn-small"
+            ><i class="bi bi-trash-fill"></i> Delete
+          </a>
+        </td>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</div>

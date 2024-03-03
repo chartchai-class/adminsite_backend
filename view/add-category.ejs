@@ -1,0 +1,21 @@
+<div class="container">
+  <% if (alert) { %>
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <%= alert %>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+  <% } %>
+  <form
+    method="POST"
+    action="/addCategory"
+    class="row m-5 g-3 needs-validation form-container"
+    novalidate
+  >
+    <%- include('./components/category-form') %>
+  </form>
+</div>

@@ -1,0 +1,38 @@
+<div class="home-container">
+  <% books.forEach(book => { %>
+  <div class="book-card">
+    <div class="card-img">
+      <% if (book.bookCover) { %>
+      <!-- Display the image -->
+      <img src="/<%= book.bookCover %>" alt="" class="card_image" />
+      <% } else { %>
+      <!-- Display default image if book cover is not available -->
+      <img src="/images/default.jpg" alt="Default Image" class="card_image" />
+
+      <% } %>
+    </div>
+
+    <div class="card-content">
+      <div class="left-content">
+        <h3><%= book.bookTitle %></h3>
+        <p><%= book.bookAuthor %></p>
+        <p>Stock: <%= book.bookStock %></p>
+        <a href="/viewbook/<%= book.bookID %>" class="btn btn-primary"
+          >Details</a
+        >
+      </div>
+      <div class="right-content">
+        <p>฿ <%= book.bookPrice %></p>
+        <p>฿ <%= book.bookPromo %></p>
+        <div class="btn-groups">
+          <a href="/updatebook/<%= book.bookID %>" class="btn btn-primary"
+            >Update</a
+          >
+          <a href="/<%= book.bookID %>" class="btn btn-primary">Delete</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <% }) %>
+</div>

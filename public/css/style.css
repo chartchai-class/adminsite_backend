@@ -1,0 +1,129 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Variables CSS */
+:root{
+
+    /* Colors */
+    --primary-color-1:#3D388B;
+    --primary-color-2:#625CB8;
+    --main-color:#BAB9FD;
+    --white-color:#FFFFFF;
+    --black-color:#000000;
+    --status-color:#FF4E03;
+
+    /* Font and typography */
+    --logo-font: "Luckiest Guy", cursive;
+    --title-font: "Poppins", sans-serif;
+    --body-font:"Montserrat", sans-serif;
+
+}
+
+
+/* Body */
+
+body{
+ font-family: var(--body-font);
+}
+/* Navigation */
+
+/* Logo */
+a.navbar-brand{
+    font-size: 30px;
+    color: #625CB8;
+    font-family: var(--logo-font);
+}
+
+/* Navigation items and links */
+.nav-item{
+    background-color:var(--primary-color-1);
+    padding: 0 14px;
+    margin: 0 12px;
+    border-radius: 7px;
+}
+a.nav-link{
+    color: white !important;
+}
+
+/* Search box */
+.search{
+    background-color: #D9D9D9;
+    border-radius: 50px;
+}
+.search input.form-control{
+    background-color: transparent !important;
+    border: none;
+
+}
+
+/* index page */
+.home-container{
+    margin: 20px 0;
+    max-height: 500px; /* Set a maximum height for the form container */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  scrollbar-width: none;
+}
+
+/* Footer */
+footer{
+    background: var(--primary-color-1);
+}
+
+.footer-logo{
+    
+    color: #625CB8;
+    font-family: var(--logo-font);
+}
+
+.btn-primary{
+    background: var(--primary-color-1);
+}
+
+.form-container {
+  max-height: 400px; /* Set a maximum height for the form container */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  scrollbar-width: none;
+}
+
+.form-container label{
+    font-weight: bold;
+}
+.form-container input,
+.form-container select,
+.form-container textarea{
+    background-color: var(--main-color);
+}
+
+/* Book card */
+.book-card{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: var(--main-color);
+    padding: 20px;
+    width: 800px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.card-img{
+    width: 20%;
+}
+img.card_image{
+    width: 100px;
+}
+.card-content{
+    justify-content: sefl;
+    width: 70%;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-content{
+    text-align: right;
+}
+.btn-group a{
+    margin: 0 12px;
+}

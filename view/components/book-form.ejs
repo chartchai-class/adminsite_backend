@@ -1,0 +1,206 @@
+<!-- Cover -->
+<div class="row mb-2">
+  <div class="col-2">
+    <label for="name" class="form-label">Cover</label>
+  </div>
+
+  <div class="col-8">
+    <input
+      type="file"
+      class="form-control"
+      id="file"
+      name="file"
+      accept="image/*"
+      value="<%= this.bookCover %>"
+    />
+  </div>
+</div>
+
+<!--Title -->
+<div class="row mb-2">
+  <div class="col-2">
+    <label for="name" class="form-label">Title</label>
+  </div>
+
+  <div class="col-8">
+    <input
+      type="text"
+      class="form-control"
+      id="book_title"
+      name="book_title"
+      value="<%= this.bookTitle %>"
+    />
+  </div>
+</div>
+
+<!--Category -->
+<div class="row mb-2">
+  <div class="col-2">
+    <label for="name" class="form-label">Category</label>
+  </div>
+
+  <div class="col-8">
+    <select name="category" id="category" class="form-select">
+      <% categories.forEach(category => { %>
+      <option value="<%= category.id %>"><%= category.category_name %></option>
+      <% }) %>
+    </select>
+  </div>
+</div>
+
+<!--Author-->
+<div class="row mb-2">
+  <div class="col-2">
+    <label for="name" class="form-label">Author</label>
+  </div>
+
+  <div class="col-8">
+    <input
+      type="text"
+      class="form-control"
+      id="author_name"
+      name="author_name"
+      value="<%= this.bookAuthor %>"
+    />
+  </div>
+</div>
+
+<!--Price-->
+<div class="row mb-2">
+  <div class="col-2">
+    <label for="name" class="form-label">Price</label>
+  </div>
+
+  <div class="col-8">
+    <input
+      type="text"
+      class="form-control"
+      id="price"
+      name="price"
+      value="<%= this.bookPrice %>"
+    />
+  </div>
+</div>
+
+<!--Promotional Price-->
+<div class="row mb-2">
+  <div class="col-2">
+    <label for="name" class="form-label">Promotional Price</label>
+  </div>
+
+  <div class="col-8">
+    <input
+      type="text"
+      class="form-control"
+      id="promo"
+      name="promo"
+      value="<%= this.bookPromo %>"
+    />
+  </div>
+</div>
+
+<!--Stock-->
+<div class="row mb-2">
+  <div class="col-2">
+    <label for="name" class="form-label">Stock</label>
+  </div>
+
+  <div class="col-8">
+    <input
+      type="text"
+      class="form-control"
+      id="stock"
+      name="stock"
+      value="<%= this.stock %>"
+    />
+  </div>
+</div>
+
+<!--Released Date-->
+<div class="row mb-2">
+  <div class="col-2">
+    <label for="name" class="form-label">Released Date</label>
+  </div>
+
+  <div class="col-8">
+    <input
+      type="date"
+      class="form-control"
+      id="date"
+      name="date"
+      value="<%= this.date %>"
+    />
+  </div>
+</div>
+
+<!--Publisher-->
+<div class="row mb-2">
+  <div class="col-2">
+    <label for="name" class="form-label">Publisher</label>
+  </div>
+
+  <div class="col-8">
+    <input
+      type="text"
+      class="form-control"
+      id="publisher"
+      name="publisher"
+      value="<%= this.publisher %>"
+    />
+  </div>
+</div>
+
+<!--Language-->
+<div class="row mb-2">
+  <div class="col-2">
+    <label for="name" class="form-label">Language</label>
+  </div>
+
+  <div class="col-8">
+    <input
+      type="text"
+      class="form-control"
+      id="language"
+      name="language"
+      value="<%= this.language %>"
+    />
+  </div>
+</div>
+
+<!--number of Pages-->
+<div class="row mb-2">
+  <div class="col-2">
+    <label for="name" class="form-label">Number of pages</label>
+  </div>
+
+  <div class="col-8">
+    <input
+      type="text"
+      class="form-control"
+      id="pages"
+      name="pages"
+      value="<%= this.pages %>"
+    />
+  </div>
+</div>
+
+<!--Description-->
+<div class="row mb-2">
+  <div class="col-2">
+    <label for="name" class="form-label">Description</label>
+  </div>
+
+  <div class="col-8">
+    <textarea name="description" id="description" class="form-control">
+      <%= this.description %>
+    </textarea>
+  </div>
+</div>
+
+<div class="row mb-2">
+  <div class="col-8"></div>
+  <div class="col-3">
+    <button class="btn btn-secondary" formaction="/">cancel</button>
+    <button class="btn btn-primary" type="submit">update</button>
+  </div>
+</div>
