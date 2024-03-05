@@ -1,7 +1,16 @@
-
-<% categories.forEach(category => { %>
+<% if (alert) { %>
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <%= alert %>
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+  ></button>
+</div>
+<% } %> <% categories.forEach(category => { %>
 <form
-  action="/updateCate/<%= category.id %>"
+  action="/updateCate/<%= category.categoryId %>"
   method="POST"
   class="row g-3 needs-validation"
   novalidate
@@ -13,8 +22,8 @@
         type="text"
         class="form-control"
         id="category_name"
-        name="category_name"
-        value="<%= category.category_name %>"
+        name="categoryName"
+        value="<%= category.categoryName %>"
       />
     </div>
   </div>

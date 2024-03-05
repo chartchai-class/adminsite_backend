@@ -7,16 +7,16 @@ router.get("/", adminController.view);
 router.get("/categories", adminController.mainCategory);
 router.get("/addCategory", adminController.cform);
 router.post("/addCategory", adminController.create);
+router.get("/updateCate/:id", adminController.update);
+router.post("/updateCate/:id", adminController.edit);
+router.get("/category/:id", adminController.delete);
+// router.get("/categories/:categoryId", adminController.category);
+
 //   .get("/addBook", adminController.form)
 //   .post("/addBook", adminController.bcreate)
 //   .get("/viewbook/:id", adminController.details)
-//   .get("/updateCate/:id", adminController.update)
-//   .post("/updateCate/:id", adminController.edit)
 //   .get("/updatebook/:id", adminController.bupdate)
 //   .post("/updatebook/:id", adminController.bedit)
-//   .get("/categories", adminController.mainCategory)
-//   .get("/categories/:categoryId", adminController.category)
-//   .get("/category/:id", adminController.delete)
 //   .get("/:id", adminController.bdelete);
 
 // router.get("/billHistory", async (req, res) => {
