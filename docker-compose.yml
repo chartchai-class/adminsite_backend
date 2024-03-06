@@ -2,9 +2,7 @@ version: '3.3'
 
 services:
   adminsitebackend:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: 29ayenyeinsan/adminsite_backend:latest
     
     environment:
       DB_HOST: ${RDS_HOSTNAME}
@@ -16,8 +14,6 @@ services:
     ports:
       - 5001:5001
 
-    expose:
-      - 5001
 
 
 

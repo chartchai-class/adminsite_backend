@@ -76,6 +76,7 @@ const Code = {
   });
   Router.get('/books', async (req, res) => {
     const sqlQuery = 'SELECT * FROM bookstore.book';
+    res.send("All books")
   
   
     try {
