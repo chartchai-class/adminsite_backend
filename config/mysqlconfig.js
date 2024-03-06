@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 const dotenv=require('dotenv').config();
 console.log(dotenv);
 
-dotenv.config();
+
 
 const createPool = () => {
   try {
