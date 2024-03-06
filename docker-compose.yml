@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   adminsitebackend:
-    image: 29ayenyeinsan/adminsite_backend:latest
+    image: 29ayenyeinsan/adminsite_backend
   
     ports:
       - 5001:5001
