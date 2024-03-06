@@ -3,15 +3,7 @@ version: '3.3'
 services:
   adminsitebackend:
     image: 29ayenyeinsan/adminsite_backend:latest
-    
-    environment:
-      DB_HOST:  ${{ secrets.RDS_HOSTNAME }}
-      DB_PASSWORD: ${secrets.RDS_PASSWORD}
-      DB_PORT: ${secrets.RDS_PORT}
-      DB_NAME: bookstore
-      SERVER_PORT: 5001
-    env_file:
-      - .env
+  
     ports:
       - 5001:5001
 
