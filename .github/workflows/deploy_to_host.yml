@@ -1,4 +1,4 @@
-name: Deploy frontend app to EC2
+name: Deploy backend app to EC2
 on:
     push:
         branches:
