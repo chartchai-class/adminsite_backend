@@ -22,3 +22,7 @@ To see the running docker container
 ```
 docker ps
 ```
+If you only want to stop the container, run this 
+```
+docker stop
+```
