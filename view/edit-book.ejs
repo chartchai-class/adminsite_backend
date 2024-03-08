@@ -13,7 +13,7 @@
   <% } %> <% books.forEach(book => { %>
   <form
     method="POST"
-    action="/updatebook/<%=book.bookID %>"
+    action="/updatebook/<%=book.bookId %>"
     class="row m-5 g-3 needs-validation form-container"
     novalidate
     encType="multipart/form-data"
@@ -31,8 +31,10 @@
           id="file"
           name="file"
           accept="image/*"
-          value="<%= book.bookCover %>"
         />
+        <% if (book.bookCover) { %>
+        <p>Current File: <%= book.bookCover %></p>
+        <% } %>
       </div>
     </div>
 
@@ -62,9 +64,9 @@
       <div class="col-8">
         <select name="category" id="category" class="form-select">
           <% categories.forEach(category => { %>
-          <option value="<%= category.id %>">
-            <%= category.category_name %>
-          </option>
+            <option value="<%= category.categoryId %>" <%= category.categoryId === book.categoryId ? 'selected' : '' %>>
+              <%= category.categoryName %>
+            </option>
           <% }) %>
         </select>
       </div>
@@ -133,7 +135,7 @@
           class="form-control"
           id="stock"
           name="stock"
-          value="<%= this.stock %>"
+          value="<%= book.stock %>"
         />
       </div>
     </div>
@@ -150,7 +152,7 @@
           class="form-control"
           id="date"
           name="date"
-          value="<%= this.date %>"
+          value="<%= book.date %>"
         />
       </div>
     </div>
@@ -167,7 +169,7 @@
           class="form-control"
           id="publisher"
           name="publisher"
-          value="<%= this.publisher %>"
+          value="<%= book.publisher %>"
         />
       </div>
     </div>
@@ -184,7 +186,7 @@
           class="form-control"
           id="language"
           name="language"
-          value="<%= this.language %>"
+          value="<%= book.language %>"
         />
       </div>
     </div>
@@ -201,7 +203,7 @@
           class="form-control"
           id="pages"
           name="pages"
-          value="<%= this.pages %>"
+          value="<%= book.pages %>"
         />
       </div>
     </div>
@@ -214,7 +216,7 @@
 
       <div class="col-8">
         <textarea name="description" id="description" class="form-control">
-      <%= this.description %>
+      <%= book.description %>
     </textarea
         >
       </div>

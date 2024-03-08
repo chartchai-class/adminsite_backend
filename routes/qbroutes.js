@@ -10,14 +10,15 @@ router.post("/addCategory", adminController.create);
 router.get("/updateCate/:id", adminController.update);
 router.post("/updateCate/:id", adminController.edit);
 router.get("/category/:id", adminController.delete);
-// router.get("/categories/:categoryId", adminController.category);
+router.get("/categories/:categoryId", adminController.category);
 
-//   .get("/addBook", adminController.form)
-//   .post("/addBook", adminController.bcreate)
-//   .get("/viewbook/:id", adminController.details)
-//   .get("/updatebook/:id", adminController.bupdate)
-//   .post("/updatebook/:id", adminController.bedit)
-//   .get("/:id", adminController.bdelete);
+router.get("/addBook", adminController.form);
+router.post("/addBook", adminController.bcreate);
+router.get("/updatebook/:id", adminController.bupdate);
+router.post("/updatebook/:id", adminController.bedit);
+router.get("/:id", adminController.bdelete);
+
+
 
 // router.get("/billHistory", async (req, res) => {
 //   const sqlQuery = "SELECT * FROM bookstore.sale_History";
