@@ -2,22 +2,11 @@ version: '3.3'
 
 services:
   adminsitebackend:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    
-    environment:
-      DB_HOST: ${RDS_HOSTNAME}
-      DB_PASSWORD: ${RDS_PASSWORD}
-      DB_PORT: ${RDS_PORT}
-      DB_NAME: bookstore
-      SERVER_PORT: 5001
-
+    image: 29ayenyeinsan/adminsite_backend
+  
     ports:
       - 5001:5001
 
-    expose:
-      - 5001
 
 
 
