@@ -19,7 +19,8 @@ app.use(fileUpload({ limits: { files: 1 } }));
 
 //static files
 
-app.use(express.static("public"));
+app.use("/assets", express.static("assets"));
+app.use("/public", express.static("public"));
 app.use(express.static("upload"));
 
 //templating engine
@@ -27,11 +28,12 @@ app.use(express.static("upload"));
 app.set("views", "./view");
 app.set("view engine", "ejs");
 app.use(expressLayouts);
-app.set("layout", "./layouts/main");
+ app.set("layout", "./layouts/login");
 
 const qbRoutes = require("./routes/qbroutes");
-app.use("/", qbRoutes);
 
+
+app.use("/", qbRoutes);
 app.listen(port, () => {
   console.log(`adminsite_backend is listening at ${port}`);
 });

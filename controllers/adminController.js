@@ -6,6 +6,8 @@ const BookModel = require("../model/bookModel");
 const categoryModel = new CategoryModel();
 const bookModel = new BookModel();
 
+
+
 //view all for all categories
 exports.mainCategory = async (req, res) => {
   try {
