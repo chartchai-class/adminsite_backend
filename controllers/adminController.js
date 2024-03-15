@@ -6,16 +6,16 @@ const BookModel = require("../model/bookModel");
 const categoryModel = new CategoryModel();
 const bookModel = new BookModel();
 
+exports.login = (req, res) => {
+  res.render("login", { layout: false });
+};
 
-
-//view all for all categories
-exports.mainCategory = async (req, res) => {
-  try {
-    const categories = await categoryModel.getAllCategories();
-
-    res.render("main-category", { categories });
-  } catch (err) {
-    console.error("Error", err);
+exports.handleLogin = (req, res) => {
+  const { username, password } = req.body;
+  if (username === "admin" && password === "password") {
+    res.redirect("/main");
+  } else {
+    res.redirect("/login?error=true");
   }
 };
 
@@ -24,6 +24,17 @@ exports.view = async (req, res) => {
     const categories = await categoryModel.getAllCategories();
     const books = await bookModel.getAllBooks();
     res.render("index", { categories, books });
+  } catch (err) {
+    console.error("Error", err);
+  }
+};
+
+//view all for all categories
+exports.mainCategory = async (req, res) => {
+  try {
+    const categories = await categoryModel.getAllCategories();
+
+    res.render("main-category", { categories });
   } catch (err) {
     console.error("Error", err);
   }

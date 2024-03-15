@@ -5,7 +5,9 @@ const adminController = require("../controllers/adminController");
 
 // for home page showing
 
-router.get("/", adminController.view);
+router.get("/", adminController.login);
+router.post("/", adminController.handleLogin);
+router.get("/main", adminController.view);
 router.get("/categories", adminController.mainCategory);
 router.get("/addCategory", adminController.cform);
 router.post("/addCategory", adminController.create);
@@ -20,8 +22,4 @@ router.get("/updatebook/:id", adminController.bupdate);
 router.post("/updatebook/:id", adminController.bedit);
 router.get("/:id", adminController.bdelete);
 
-
-
-
 module.exports = router;
-
