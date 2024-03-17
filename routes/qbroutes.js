@@ -15,6 +15,7 @@ router.get("/updateCate/:id", adminController.update);
 router.post("/updateCate/:id", adminController.edit);
 router.get("/category/:id", adminController.delete);
 router.get("/categories/:categoryId", adminController.category);
+router.get("/billHistory", adminController.billHistory);
 
 router.get("/addBook", adminController.form);
 router.post("/addBook", adminController.bcreate);

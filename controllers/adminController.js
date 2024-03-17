@@ -1,10 +1,12 @@
 const CategoryModel = require("../model/categoryModel");
 const BookModel = require("../model/bookModel");
+const BillHistoryModel = require("../model/billHistoryModel");
 
-// const BookModel = require("../model/bookModel");
+
 
 const categoryModel = new CategoryModel();
 const bookModel = new BookModel();
+const billHistoryModel = new BillHistoryModel();
 
 exports.login = (req, res) => {
   res.render("login", { layout: false });
@@ -17,6 +19,14 @@ exports.handleLogin = (req, res) => {
   } else {
     res.redirect("/login?error=true");
   }
+};
+
+exports.billHistory = async (req, res) => {
+  const categories = await categoryModel.getAllCategories();
+  const billHistory = await billHistoryModel.getAllBills();
+  res.render('billHistory',{ categories,billHistory});
+
+
 };
 
 exports.view = async (req, res) => {
