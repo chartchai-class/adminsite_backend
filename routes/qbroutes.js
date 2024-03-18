@@ -1,12 +1,11 @@
 const express = require("express");
 
 const router = express.Router();
+const authenController = require("../controllers/authenController");
 const adminController = require("../controllers/adminController");
 
 // for home page showing
 
-router.get("/", adminController.login);
-router.post("/", adminController.handleLogin);
 router.get("/main", adminController.view);
 router.get("/categories", adminController.mainCategory);
 router.get("/addCategory", adminController.cform);
@@ -22,5 +21,10 @@ router.post("/addBook", adminController.bcreate);
 router.get("/updatebook/:id", adminController.bupdate);
 router.post("/updatebook/:id", adminController.bedit);
 router.get("/:id", adminController.bdelete);
+
+//authentication 
+router.get("/", authenController.login)
+router.post("/", authenController.userlogin);
+router.get("/logout",authenController.logout)
 
 module.exports = router;

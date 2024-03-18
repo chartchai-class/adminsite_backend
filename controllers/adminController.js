@@ -8,19 +8,6 @@ const categoryModel = new CategoryModel();
 const bookModel = new BookModel();
 const billHistoryModel = new BillHistoryModel();
 
-exports.login = (req, res) => {
-  res.render("login", { layout: false });
-};
-
-exports.handleLogin = (req, res) => {
-  const { username, password } = req.body;
-  if (username === "admin" && password === "password") {
-    res.redirect("/main");
-  } else {
-    res.redirect("/login?error=true");
-  }
-};
-
 exports.billHistory = async (req, res) => {
   const categories = await categoryModel.getAllCategories();
   const billHistory = await billHistoryModel.getAllBills();
