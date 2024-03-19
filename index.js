@@ -3,7 +3,6 @@ const expressLayouts = require("express-ejs-layouts");
 const fileUpload = require("express-fileupload");
 const bodyParser = require("body-parser");
 
-// const path = require("path");
 
 require("dotenv").config();
 

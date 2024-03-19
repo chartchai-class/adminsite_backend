@@ -127,3 +127,9 @@ img.card_image{
 .btn-group a{
     margin: 0 12px;
 }
+.custom_Num{
+  color:#FFA033;
+  font-size: 50px;
+  font-family: "Poppins";
+  margin:auto;
+}

@@ -109,6 +109,12 @@ class BookModel {
     const results = await this.executeQuery(query, [categoryId]);
     return results;
   }
+  async getSaleCountBook(){
+    const query = "SELECT * FROM book ORDER BY sale_count Desc LIMIT 10";
+    const results = await this.executeQuery(query);
+    return results;
+
+  }
 }
 
 module.exports = BookModel;

@@ -8,6 +8,12 @@ const categoryModel = new CategoryModel();
 const bookModel = new BookModel();
 const billHistoryModel = new BillHistoryModel();
 
+exports.bestSeller = async(req,res)=>{
+  const categories = await categoryModel.getAllCategories();
+  const bestSeller = await bookModel.getSaleCountBook();//Limit 10
+  res.render('bestSeller',{categories,bestSeller:bestSeller});
+}
+
 exports.login = (req, res) => {
   res.render("login", { layout: false });
 };
