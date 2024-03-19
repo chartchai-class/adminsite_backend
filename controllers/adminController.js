@@ -1,20 +1,19 @@
 const CategoryModel = require("../model/categoryModel");
 const BookModel = require("../model/bookModel");
+const BillHistoryModel = require("../model/billHistoryModel");
 
-// const BookModel = require("../model/bookModel");
+
 
 const categoryModel = new CategoryModel();
 const bookModel = new BookModel();
+const billHistoryModel = new BillHistoryModel();
 
-//view all for all categories
-exports.mainCategory = async (req, res) => {
-  try {
-    const categories = await categoryModel.getAllCategories();
+exports.billHistory = async (req, res) => {
+  const categories = await categoryModel.getAllCategories();
+  const billHistory = await billHistoryModel.getAllBills();
+  res.render('billHistory',{ categories,billHistory});
 
-    res.render("main-category", { categories });
-  } catch (err) {
-    console.error("Error", err);
-  }
+
 };
 
 exports.view = async (req, res) => {
@@ -22,6 +21,17 @@ exports.view = async (req, res) => {
     const categories = await categoryModel.getAllCategories();
     const books = await bookModel.getAllBooks();
     res.render("index", { categories, books });
+  } catch (err) {
+    console.error("Error", err);
+  }
+};
+
+//view all for all categories
+exports.mainCategory = async (req, res) => {
+  try {
+    const categories = await categoryModel.getAllCategories();
+
+    res.render("main-category", { categories });
   } catch (err) {
     console.error("Error", err);
   }

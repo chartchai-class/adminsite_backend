@@ -1,0 +1,29 @@
+<div class="container p-5">
+    <div class="table-responsive-sm">
+        <table class="table table-bordered m-2">
+            <thead>
+              <tr >
+               
+                <th scope="col"   style="background-color:#928bef;color:#3D388B">Bill_ID</th>
+                <th scope="col"   style="background-color:#928bef;color:#3D388B">Date</th>
+                <th scope="col"   style="background-color:#928bef;color:#3D388B">Product</th>
+                <th scope="col"   style="background-color:#928bef;color:#3D388B">Quantity</th>
+                <th scope="col"   style="background-color:#928bef;color:#3D388B">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+                <% billHistory.forEach(bill => { %>
+                  <tr>
+                    <th scope="row"><%= bill.billId %></th>
+                    <td><%= new Date(bill.billDate).toLocaleDateString('en-US', { day: '2-digit', month: '2-digit', year: 'numeric' }) %></td>
+                    <td><%= bill.bookId %></td>
+                    <td><%= bill.quantity %></td>
+                    <td><%= bill.billPrice %></td>
+                  </tr>
+                <% }); %>
+              </tbody>
+              
+          </table>
+    </div>
+   
+</div>

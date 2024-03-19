@@ -1,4 +1,4 @@
-const pool = require("../config/mysqlconfig");
+const {pool} = require("../config/mysqlconfig");
 
 class BookModel {
   executeQuery(query, params) {
