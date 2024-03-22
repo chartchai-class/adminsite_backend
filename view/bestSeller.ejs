@@ -1,0 +1,36 @@
+<% console.log("bestseller",bestSeller) %>
+<h1>Top 10 of Best Seller</h1>
+<div class="home-container m-2">
+    <% var count = 0;
+    bestSeller.forEach(bestseller => { %>
+    <div class="book-card">
+      <div class="card-img d-flex me-5 pe-2">
+        <% if (bestseller.bookCover) { %>
+            <div class="custom_Num pe-4"><%- ++count %></div>
+        <!-- Display the image -->
+        <img src="/<%= bestseller.bookCover %>" alt="" class="card_image" />
+        <% } else { %>
+        <!-- Display default image if book cover is not available -->
+        <img src="/images/default.jpg" alt="Default Image" class="card_image" />
+  
+        <% } %>
+      </div>
+  
+      <div class="card-content">
+        <div class="left-content">
+          <h3><%= bestseller.bookTitle %></h3>
+          <p><%= bestseller.bookAuthor %></p>
+          <p>Stock: <%= bestseller.stock %></p>
+          
+        </div>
+        <div class="right-content">
+          <p>Sold: <%= bestseller.sale_count %></p>
+          <p>฿ <%= bestseller.bookPrice %></p>
+         
+        </div>
+      </div>
+    </div>
+  
+    <% }) %>
+  </div>
+  

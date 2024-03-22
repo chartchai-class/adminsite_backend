@@ -58,8 +58,8 @@ a.nav-link{
 
 /* index page */
 .home-container{
-    margin: 20px 0;
-    max-height: 500px; /* Set a maximum height for the form container */
+    margin: 50px 0;    
+    max-height: 100vh; /* Set a maximum height for the form container */
   overflow-y: auto; /* Enable vertical scrolling if content overflows */
   scrollbar-width: none;
 }
@@ -112,7 +112,7 @@ img.card_image{
     width: 100px;
 }
 .card-content{
-    justify-content: sefl;
+    justify-content: self;
     width: 70%;
 }
 .card-content{
@@ -124,6 +124,44 @@ img.card_image{
 .right-content{
     text-align: right;
 }
-.btn-group a{
-    margin: 0 12px;
+.btn-groups a{
+    margin: 5px 12px;
 }
+.custom_Num{
+  color:#FFA033;
+  font-size: 50px;
+  font-family: "Poppins";
+  margin:auto;
+}
+@media (min-width: 300px) and (max-width: 1023px) {
+    .home-container{
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .book-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-content
+    {
+      
+        display: flex;
+        font-size: 12px;
+        width: 100%;
+    }
+    .left-content,.right-content{
+        width: 50%;
+    }
+
+    .card-content h3{
+        font-size: 14px;
+    }
+
+    .btn{
+        padding: 4px 8px;
+        margin: 8px 12px;
+    }
+   
+  }

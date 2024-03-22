@@ -1,10 +1,10 @@
 <!-- Cover -->
 <div class="row mb-2">
-  <div class="col-2">
+  <div class="col-lg-2 col-sm-12">
     <label for="name" class="form-label">Cover</label>
   </div>
 
-  <div class="col-8">
+  <div class="col-lg-8 col-sm-12">
     <input
       type="file"
       class="form-control"
@@ -18,11 +18,11 @@
 
 <!--Title -->
 <div class="row mb-2">
-  <div class="col-2">
+  <div class="col-lg-2 col-sm-12">
     <label for="name" class="form-label">Title</label>
   </div>
 
-  <div class="col-8">
+  <div class="col-lg-8 col-sm-12">
     <input
       type="text"
       class="form-control"
@@ -35,11 +35,11 @@
 
 <!--Category -->
 <div class="row mb-2">
-  <div class="col-2">
+  <div class="col-lg-2 col-sm-12">
     <label for="name" class="form-label">Category</label>
   </div>
 
-  <div class="col-8">
+  <div class="col-lg-8 col-sm-12">
     <select name="category" id="category" class="form-select">
       <% categories.forEach(category => { %>
       <option value="<%= category.categoryId %>">
@@ -52,11 +52,11 @@
 
 <!--Author-->
 <div class="row mb-2">
-  <div class="col-2">
+  <div class="col-lg-2 col-sm-12">
     <label for="name" class="form-label">Author</label>
   </div>
 
-  <div class="col-8">
+  <div class="col-lg-8 col-sm-12">
     <input
       type="text"
       class="form-control"
@@ -69,11 +69,11 @@
 
 <!--Price-->
 <div class="row mb-2">
-  <div class="col-2">
+  <div class="col-lg-2 col-sm-12">
     <label for="name" class="form-label">Price</label>
   </div>
 
-  <div class="col-8">
+  <div class="col-lg-8 col-sm-12">
     <input
       type="text"
       class="form-control"
@@ -86,11 +86,11 @@
 
 <!--Promotional Price-->
 <div class="row mb-2">
-  <div class="col-2">
+  <div class="col-lg-2 col-sm-12">
     <label for="name" class="form-label">Promotional Price</label>
   </div>
 
-  <div class="col-8">
+  <div class="col-lg-8 col-sm-12">
     <input
       type="text"
       class="form-control"
@@ -103,11 +103,11 @@
 
 <!--Stock-->
 <div class="row mb-2">
-  <div class="col-2">
+  <div class="col-lg-2 col-sm-12">
     <label for="name" class="form-label">Stock</label>
   </div>
 
-  <div class="col-8">
+  <div class="col-lg-8 col-sm-12">
     <input
       type="text"
       class="form-control"
@@ -120,11 +120,11 @@
 
 <!--Released Date-->
 <div class="row mb-2">
-  <div class="col-2">
+  <div class="col-lg-2 col-sm-12">
     <label for="name" class="form-label">Released Date</label>
   </div>
 
-  <div class="col-8">
+  <div class="col-lg-8 col-sm-12">
     <input
       type="date"
       class="form-control"
@@ -137,11 +137,11 @@
 
 <!--Publisher-->
 <div class="row mb-2">
-  <div class="col-2">
+  <div class="col-lg-2 col-sm-12">
     <label for="name" class="form-label">Publisher</label>
   </div>
 
-  <div class="col-8">
+  <div class="col-lg-8 col-sm-12">
     <input
       type="text"
       class="form-control"
@@ -154,11 +154,11 @@
 
 <!--Language-->
 <div class="row mb-2">
-  <div class="col-2">
+  <div class="col-lg-2 col-sm-12">
     <label for="name" class="form-label">Language</label>
   </div>
 
-  <div class="col-8">
+  <div class="col-lg-8 col-sm-12">
     <input
       type="text"
       class="form-control"
@@ -171,11 +171,11 @@
 
 <!--number of Pages-->
 <div class="row mb-2">
-  <div class="col-2">
+  <div class="col-lg-2 col-sm-12">
     <label for="name" class="form-label">Number of pages</label>
   </div>
 
-  <div class="col-8">
+  <div class="col-lg-8 col-sm-12">
     <input
       type="text"
       class="form-control"
@@ -188,11 +188,11 @@
 
 <!--Description-->
 <div class="row mb-2">
-  <div class="col-2">
+  <div class="col-lg-2 col-sm-12">
     <label for="name" class="form-label">Description</label>
   </div>
 
-  <div class="col-8">
+  <div class="col-lg-8 col-sm-12">
     <textarea name="description" id="description" class="form-control">
       <%= this.description %>
     </textarea>
@@ -200,7 +200,7 @@
 </div>
 
 <div class="row mb-2">
-  <div class="col-8"></div>
+  <div class="col-lg-8 col-sm-12"></div>
   <div class="col-3">
     <button class="btn btn-secondary" formaction="/">cancel</button>
     <button class="btn btn-primary" type="submit">update</button>

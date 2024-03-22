@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-light">
   <div class="container">
-    <a class="navbar-brand" href="/">Bookie</a>
+    <a class="navbar-brand" href="/main">Bookie</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -72,11 +72,26 @@
             <li><a class="dropdown-item" href="/addBook">Add Book</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">History</a>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            History
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="/billHistory">Bill History</a>
+            </li>
+            <li><a class="dropdown-item" href="/bestSeller">Best Seller</a></li>
+          </ul>
         </li>
+       
         <li class="nav-item">
-          <a class="nav-link" href="#">Logout</a>
+          <a class="nav-link" href="/logout">Logout</a>
         </li>
       </ul>
     </div>
