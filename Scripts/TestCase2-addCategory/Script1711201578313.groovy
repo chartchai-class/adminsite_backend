@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Object Repository/AddCategoryPage_/a_Add'))
 
 WebUI.click(findTestObject('Object Repository/AddCategoryPage_/a_Add Category'))
 
-WebUI.setText(findTestObject('Object Repository/AddCategoryPage_/input_Category Name_categoryName'), 'girlLove')
+WebUI.setText(findTestObject('Object Repository/AddCategoryPage_/input_Category Name_categoryName'), categoryName)
 
 WebUI.click(findTestObject('Object Repository/AddCategoryPage_/button_Submit'))
 
