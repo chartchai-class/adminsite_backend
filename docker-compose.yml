@@ -1,7 +1,7 @@
 version: '3.3'
 
 services:
-  adminsitebackend:
+  adminsitebackend_staging:
     image: 29ayenyeinsan/adminsite_backend
   
     ports:

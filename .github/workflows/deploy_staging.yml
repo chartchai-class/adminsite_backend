@@ -3,10 +3,9 @@ on:
     push:
         branches:
             - staging
-    
-            
-
-    
+    pull_request:
+        branches:
+           - staging
 jobs:
     docker:
         runs-on: ubuntu-latest
@@ -65,11 +64,11 @@ jobs:
                      sudo docker-compose pull
 
                      sudo docker-compose up -d
-                     sudo docker exec admin_backend_adminsitebackend_1 sh -c 'echo "RDS_HOSTNAME=${{secrets.RDS_HOSTNAME }}" >> /app/.env'
-                     sudo docker exec admin_backend_adminsitebackend_1 sh -c 'echo " RDS_USERNAME=${{ secrets.RDS_USERNAME}}" >> /app/.env'
-                     sudo docker exec admin_backend_adminsitebackend_1 sh -c 'echo " RDS_PASSWORD=${{secrets.RDS_PASSWORD}}" >> /app/.env'
-                     sudo docker exec admin_backend_adminsitebackend_1 sh -c 'echo "RDS_PORT=${{secrets.RDS_PORT}}" >> /app/.env'
-                     sudo docker restart admin_backend_adminsitebackend_1
+                     sudo docker exec admin_backend_adminsitebackend_staging_1 sh -c 'echo "RDS_HOSTNAME=${{secrets.RDS_HOSTNAME }}" >> /app/.env'
+                     sudo docker exec admin_backend_adminsitebackend_staging_1 sh -c 'echo " RDS_USERNAME=${{ secrets.RDS_USERNAME}}" >> /app/.env'
+                     sudo docker exec admin_backend_adminsitebackend_staging_1 sh -c 'echo " RDS_PASSWORD=${{secrets.RDS_PASSWORD}}" >> /app/.env'
+                     sudo docker exec admin_backend_adminsitebackend_staging_1 sh -c 'echo "RDS_PORT=${{secrets.RDS_PORT}}" >> /app/.env'
+                     sudo docker restart admin_backend_adminsitebackend_staging_1
 
 
                     
