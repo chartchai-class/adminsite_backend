@@ -1,4 +1,4 @@
-name: Deploy staging to EC2
+name: Deploy main to EC2
 on:
     push:
         branches:
