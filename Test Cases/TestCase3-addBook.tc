@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TestCase3</name>
+   <name>TestCase3-addBook</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>cb99a9e3-969e-4fd2-8d33-8e38c1da6998</testCaseGuid>

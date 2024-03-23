@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('http://54.200.147.118:5001/')
+WebUI.navigateToUrl(GlobalVariable.G_SiteUrl)
 
-WebUI.setText(findTestObject('Object Repository/AddCategoryPage_/input_username'), 'admin')
+WebUI.setText(findTestObject('Object Repository/AddCategoryPage_/input_username'), GlobalVariable.username)
 
 WebUI.setEncryptedText(findTestObject('Object Repository/AddCategoryPage_/input_password'), 'yHe9suVz1Dkg/2HJIvR/uA==')
 
