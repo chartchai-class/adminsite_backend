@@ -17,3 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://34.217.125.250:5001/')
+
+WebUI.setText(findTestObject('Object Repository/LoginPage_/input_Username_username'), 'admin')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/LoginPage_/input_Password_password'), 'yHe9suVz1Dkg/2HJIvR/uA==')
+
+WebUI.click(findTestObject('Object Repository/LoginPage_/button_Login'))
+
+WebUI.closeBrowser()
+
