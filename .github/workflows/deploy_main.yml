@@ -63,7 +63,7 @@ jobs:
                      echo ${{secrets.DOCKER_HUB_TOKEN }} | docker login --username ${{secrets.DOCKER_HUB_USERNAME}} --password-stdin
                      sudo docker-compose down
                      sudo docker-compose pull
-
+                    
                      sudo docker-compose -f /home/ubuntu/admin_backend/docker-compose-main.yml up -d
 
                      sudo docker exec admin_backend_adminsitebackendd_1 sh -c 'echo "RDS_HOSTNAME=${{secrets.RDS_HOSTNAME }}" >> /app/.env'
