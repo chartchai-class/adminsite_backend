@@ -4,4 +4,19 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://54.200.147.118:5001/'</initValue>
+      <name>G_SiteUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'admin'</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'adminpassword'</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

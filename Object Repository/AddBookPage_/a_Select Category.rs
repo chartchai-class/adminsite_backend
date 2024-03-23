@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Select Category</name>
+   <tag></tag>
+   <elementGuidId>141f9c49-0da8-42d8-bbfc-4545a8afec95</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>a.nav-link.dropdown-toggle.show</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='navbarSupportedContent']/ul/li[2]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>3b91d4b5-3ab5-48a8-bfaa-298dea81a22b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>nav-link dropdown-toggle show</value>
+      <webElementGuid>729231fd-73a2-4c49-a325-209a23f26af0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>#</value>
+      <webElementGuid>0dc7021c-b563-4eed-81eb-97a5edbea0e3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>19f17588-1316-4f0d-a2b1-b907a749a6e2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-bs-toggle</name>
+      <type>Main</type>
+      <value>dropdown</value>
+      <webElementGuid>ca1330a7-cb0f-4b77-8f72-9b6f6c0c0b17</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-expanded</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>ecabc4f9-b58c-446a-865f-a53b17985163</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+            Select Category
+          </value>
+      <webElementGuid>44c8b16f-0289-4cc6-a990-46b1959cf289</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;navbarSupportedContent&quot;)/ul[@class=&quot;navbar-nav ms-auto mb-2 mb-lg-0&quot;]/li[@class=&quot;nav-item dropdown&quot;]/a[@class=&quot;nav-link dropdown-toggle show&quot;]</value>
+      <webElementGuid>7339db2e-9640-4015-ad67-54bdc50aeaf1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='navbarSupportedContent']/ul/li[2]/a</value>
+      <webElementGuid>411e2e41-2778-4a87-9674-1601e3f0464b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Select Category')]</value>
+      <webElementGuid>6ed80ca7-def9-49ca-8f55-3660a3f7d299</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Categories'])[1]/following::a[1]</value>
+      <webElementGuid>f86c24aa-c85a-4f1d-b6ae-e3184fba8e24</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bookie'])[1]/following::a[2]</value>
+      <webElementGuid>09afba11-8cf8-46a2-8c44-ff85e00d8ded</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kids Books'])[1]/preceding::a[1]</value>
+      <webElementGuid>ede8c044-6397-44a3-8dbe-ce1fd1e7e5c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Crime'])[1]/preceding::a[2]</value>
+      <webElementGuid>f20441eb-12b1-4635-9c34-877b24214fdb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Select Category']/parent::*</value>
+      <webElementGuid>b1c8f5fb-f298-495e-a7e6-54658e63e262</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '#')]</value>
+      <webElementGuid>4d34b24d-e10e-42bd-88d9-fce29b493f79</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[2]/a</value>
+      <webElementGuid>dfc41552-d3ac-4111-8570-8e5413e2bf60</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '#' and (text() = '
+            Select Category
+          ' or . = '
+            Select Category
+          ')]</value>
+      <webElementGuid>28db6159-4362-45da-9d8d-ab522a4be2d2</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

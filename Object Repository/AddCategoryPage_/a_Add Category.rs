@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Add Category</name>
+   <tag></tag>
+   <elementGuidId>cb79d082-1338-475c-9f8c-cea7454f41bd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>ul.dropdown-menu.show > li > a.dropdown-item</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='navbarSupportedContent']/ul/li[3]/ul/li/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>2df02165-f345-4402-814f-3584ce1e9219</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dropdown-item</value>
+      <webElementGuid>b31aeb2d-1f3e-4b7c-bcf3-2eea6cdb6a5b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/addCategory</value>
+      <webElementGuid>3b1a3569-17c7-420c-b7d4-8caca212c95f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Add Category</value>
+      <webElementGuid>00fdbb4f-91a9-4ad2-8e75-b463f94552ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;navbarSupportedContent&quot;)/ul[@class=&quot;navbar-nav ms-auto mb-2 mb-lg-0&quot;]/li[@class=&quot;nav-item dropdown&quot;]/ul[@class=&quot;dropdown-menu show&quot;]/li[1]/a[@class=&quot;dropdown-item&quot;]</value>
+      <webElementGuid>0d0aa795-375a-442c-a258-57822df3d681</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='navbarSupportedContent']/ul/li[3]/ul/li/a</value>
+      <webElementGuid>3e75aead-72ed-4530-94aa-6cb8c583b167</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Add Category')]</value>
+      <webElementGuid>baba499a-3fd4-4a34-9781-291be0d89eb3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Romance'])[1]/following::a[2]</value>
+      <webElementGuid>5d8902aa-9092-4a26-836d-1d138bc66174</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Crime'])[1]/following::a[3]</value>
+      <webElementGuid>994ecc06-b0cd-4dd9-9457-223ccb53fd57</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Book'])[1]/preceding::a[1]</value>
+      <webElementGuid>b5c9c0b9-319e-47f1-92af-ef4a094247d6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bill History'])[1]/preceding::a[3]</value>
+      <webElementGuid>22b83bab-f575-48db-b0ce-e306c367511e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Add Category']/parent::*</value>
+      <webElementGuid>dfa72e89-49cd-4edc-be7c-25d20945efb6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/addCategory')]</value>
+      <webElementGuid>f1803df0-b8cc-4513-8fdb-56d00304c85f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[3]/ul/li/a</value>
+      <webElementGuid>ac8c47f1-11b6-4596-8aaf-f05c71eaae61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/addCategory' and (text() = 'Add Category' or . = 'Add Category')]</value>
+      <webElementGuid>9026117f-c732-4824-95bd-51621a9a085b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

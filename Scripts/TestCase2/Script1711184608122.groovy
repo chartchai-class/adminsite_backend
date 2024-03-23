@@ -19,15 +19,31 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.G_SiteUrl)
+WebUI.navigateToUrl('http://54.200.147.118:5001/')
 
-WebUI.setText(findTestObject('Object Repository/LoginPage_/input_username'), GlobalVariable.username)
+WebUI.setText(findTestObject('Object Repository/AddCategoryPage_/input_username'), 'admin')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/LoginPage_/input_password'), 'yHe9suVz1Dkg/2HJIvR/uA==')
+WebUI.setEncryptedText(findTestObject('Object Repository/AddCategoryPage_/input_password'), 'yHe9suVz1Dkg/2HJIvR/uA==')
 
-WebUI.click(findTestObject('Object Repository/LoginPage_/button_Login'))
+WebUI.click(findTestObject('Object Repository/AddCategoryPage_/button_Login'))
 
-WebUI.navigateToMaskedUrl('http://54.200.147.118:5001/main')
+WebUI.click(findTestObject('Object Repository/AddCategoryPage_/a_Add'))
+
+WebUI.click(findTestObject('Object Repository/AddCategoryPage_/a_Add Category'))
+
+WebUI.setText(findTestObject('Object Repository/AddCategoryPage_/input_Category Name_categoryName'), 'girlLove')
+
+WebUI.click(findTestObject('Object Repository/AddCategoryPage_/button_Submit'))
+
+WebUI.click(findTestObject('Object Repository/AddCategoryPage_/div_Category added successfully'))
+
+WebUI.click(findTestObject('Object Repository/AddCategoryPage_/a_Select Category'))
+
+WebUI.click(findTestObject('Object Repository/AddCategoryPage_/a_girlLove'))
+
+WebUI.click(findTestObject('Object Repository/AddCategoryPage_/a_Categories'))
+
+WebUI.click(findTestObject('Object Repository/AddCategoryPage_/td_girlLove'))
 
 WebUI.closeBrowser()
 

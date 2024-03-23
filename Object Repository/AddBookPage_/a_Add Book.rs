@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Add Book</name>
+   <tag></tag>
+   <elementGuidId>12b065a6-483e-4bde-a88e-2f170931297b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>ul.dropdown-menu.show > li:nth-of-type(2) > a.dropdown-item</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='navbarSupportedContent']/ul/li[3]/ul/li[2]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>124f12bf-97a0-4ce1-8c94-a3e1fbd08394</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>dropdown-item</value>
+      <webElementGuid>70c99498-c6cb-4425-bb6b-ffcac9fb9a1f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/addBook</value>
+      <webElementGuid>01668121-8438-443c-b54f-a866f4e5316c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Add Book</value>
+      <webElementGuid>e4140737-64ce-4072-a303-702bde137a21</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;navbarSupportedContent&quot;)/ul[@class=&quot;navbar-nav ms-auto mb-2 mb-lg-0&quot;]/li[@class=&quot;nav-item dropdown&quot;]/ul[@class=&quot;dropdown-menu show&quot;]/li[2]/a[@class=&quot;dropdown-item&quot;]</value>
+      <webElementGuid>e083e592-4a68-4dc8-a55f-8b43b25c7f34</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='navbarSupportedContent']/ul/li[3]/ul/li[2]/a</value>
+      <webElementGuid>38fe7a41-c753-4fa6-bc6d-921b8290560f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:link</name>
+      <type>Main</type>
+      <value>//a[contains(text(),'Add Book')]</value>
+      <webElementGuid>88433c7d-880b-4c34-bfef-9eefb0a3eecc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add Category'])[1]/following::a[1]</value>
+      <webElementGuid>44b9d63d-9b6a-4f03-ac40-519ee3e4bead</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='girlLove'])[2]/following::a[3]</value>
+      <webElementGuid>77048cc5-e260-4eb3-9dce-666735bde972</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bill History'])[1]/preceding::a[2]</value>
+      <webElementGuid>c2d88e88-131c-4e4c-aafe-50fe4473371d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Best Seller'])[1]/preceding::a[3]</value>
+      <webElementGuid>b1625f1d-0673-4bb5-9408-2f8535c4bce4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Add Book']/parent::*</value>
+      <webElementGuid>1a2a173d-d5e0-423d-a959-1a3195047376</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/addBook')]</value>
+      <webElementGuid>a6e02e4b-883b-4cf4-93a7-3ae3ba75ec9f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[3]/ul/li[2]/a</value>
+      <webElementGuid>d06ec279-3f7c-43fb-8bd6-70d6a79603a0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/addBook' and (text() = 'Add Book' or . = 'Add Book')]</value>
+      <webElementGuid>1e111742-e287-410b-a86e-87e0624d086c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
