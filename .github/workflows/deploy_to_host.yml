@@ -3,6 +3,7 @@ on:
     push:
         branches:
             - main
+            - staging
 
     
 jobs:
@@ -56,6 +57,15 @@ jobs:
                     sudo apt-get install -y docker
                     sudo apt-get install -y docker-compose
                     sudo usermod -aG docker ubuntu
+                    
+                    # Determine the port based on the branch
+                    if [ "${{ github.ref }}" = "refs/heads/staging" ]; then
+                      PORT=5001
+                    elif [ "${{ github.ref }}" = "refs/heads/main" ]; then
+                      PORT=3000
+                    fi
+        
+                    echo "Deploying to port $PORT"
                 
                      cd /home/ubuntu/admin_backend
                      echo ${{secrets.DOCKER_HUB_TOKEN }} | docker login --username ${{secrets.DOCKER_HUB_USERNAME}} --password-stdin
