@@ -2,7 +2,7 @@ name: Deploy staging to EC2
 on:
     push:
         branches:
-            - staging
+            - main
 
     
 jobs:
@@ -42,7 +42,7 @@ jobs:
                 key: ${{ secrets.HOST_SSH_PRIVATE_KEY}}
                 port: 22
                 source: |
-                   docker-compose.yml
+                   docker-compose-main.yml
                 target: "/home/ubuntu/admin_backend"
             - name: docker compose
               uses: appleboy/ssh-action@v0.1.10
@@ -62,12 +62,13 @@ jobs:
                      sudo docker-compose down
                      sudo docker-compose pull
 
-                     sudo docker-compose up -d
-                     sudo docker exec admin_backend_adminsitebackend_1 sh -c 'echo "RDS_HOSTNAME=${{secrets.RDS_HOSTNAME }}" >> /app/.env'
-                     sudo docker exec admin_backend_adminsitebackend_1 sh -c 'echo " RDS_USERNAME=${{ secrets.RDS_USERNAME}}" >> /app/.env'
-                     sudo docker exec admin_backend_adminsitebackend_1 sh -c 'echo " RDS_PASSWORD=${{secrets.RDS_PASSWORD}}" >> /app/.env'
-                     sudo docker exec admin_backend_adminsitebackend_1 sh -c 'echo "RDS_PORT=${{secrets.RDS_PORT}}" >> /app/.env'
-                     sudo docker restart admin_backend_adminsitebackend_1
+                     sudo docker-compose -f /home/ubuntu/admin_backend/docker-compose-main.yml up -d
+
+                     sudo docker exec admin_backend_adminsitebackendd_1 sh -c 'echo "RDS_HOSTNAME=${{secrets.RDS_HOSTNAME }}" >> /app/.env'
+                     sudo docker exec admin_backend_adminsitebackendd_1 sh -c 'echo " RDS_USERNAME=${{ secrets.RDS_USERNAME}}" >> /app/.env'
+                     sudo docker exec admin_backend_adminsitebackendd_1 sh -c 'echo " RDS_PASSWORD=${{secrets.RDS_PASSWORD}}" >> /app/.env'
+                     sudo docker exec admin_backend_adminsitebackendd_1 sh -c 'echo "RDS_PORT=${{secrets.RDS_PORT}}" >> /app/.env'
+                     sudo docker restart admin_backend_adminsitebackendd_1
 
 
                     

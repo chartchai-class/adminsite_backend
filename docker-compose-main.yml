@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  adminsitebackendd:
+    image: 29ayenyeinsan/adminsite_backend
+  
+    ports:
+      - 3000:5001
+
+
+
+
+
+
