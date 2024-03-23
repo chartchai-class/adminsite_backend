@@ -1,11 +1,9 @@
-name: Deploy backend app to EC2
+name: Deploy staging to EC2
 on:
     push:
         branches:
             - staging
-    pull_request:
-        branches:
-            - main
+    
             
 
     
